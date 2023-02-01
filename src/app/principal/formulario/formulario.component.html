@@ -1,0 +1,50 @@
+<section class="bg-light">
+    <section class="container-sm pt-4 pb-3">
+        <form (ngSubmit)="Procesar()">
+            <h2>Edit User</h2>
+            <section class="row">
+                <section class="form-group col-2">
+                    <label for="titulo">Title</label>
+                    <input type="text" class="form-control" name="titulo" [(ngModel)]="datos[0].Titulo">
+                </section>
+                <section class="form-group col-5">
+                    <label for="nombre">First Name</label>
+                    <input type="text" class="form-control" name="nombre" [(ngModel)]="datos[0].Nombre">
+                </section>
+                <section class="form-group col-5">
+                    <label for="apellido">Last Name</label>
+                    <input type="text" class="form-control" name="apellido" [(ngModel)]="datos[0].Apellido">
+                </section>
+            </section>
+            
+            <section class="row">
+                <section class="form-group col-6">
+                    <label for="correo">Email</label>
+                    <input type="text" class="form-control" name="correo" [(ngModel)]="datos[0].Correo">
+                </section>
+        
+                <section class="form-group col-6">
+                    <label for="role">Role</label>
+                    <input type="text" class="form-control" name="role" [(ngModel)]="datos[0].Role">
+                </section>
+            </section>
+    
+            <section class="row mt-4">
+                <h3>Change Password</h3>
+                <section class="form-group col-6">
+                    <label for="pwd">Password</label>
+                    <input type="password" class="form-control" name="pwd">
+                </section>
+        
+                <section class="form-group col-6">
+                    <label for="cpwd">Confirm Password</label>
+                    <input type="password" class="form-control" name="cpwd">
+                </section>
+            </section>
+            
+            <section class="form-group">
+               <input type="submit" value="Save" class="btn btn-primary mt-4">
+            </section>
+        </form>
+    </section>
+</section>
